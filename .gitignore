@@ -34,3 +34,6 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+/Desafios/Desafio1/nbproject/private/
+
+*.rar

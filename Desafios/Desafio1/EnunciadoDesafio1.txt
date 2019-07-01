@@ -1,0 +1,12 @@
+Enunciado de la tarea 1 de la sección 2949
+Complete los siguientes enunciados, recuerden comprimir los archivos antes de enviarlos, y tomar todas las capturas de pantalla necesarios
+
+1.- Buscar en Internet una plataforma o servicio que tenga una API publica, y averiguar como consumir de ella, enviar la url del API junto a la explicación de como conectarse a dicha API
+
+2.- Ir al inicio de sesión de de algún administrador de correo (Gmail, Hotmail, Yahoo, etc.) y observar desde las opciones de desarrollo las peticiones que genera, al momento de iniciar sesión, tomar capture del contenido y headers de algunas peticiones que realice (mínimo: 3 peticiones)
+
+3.- Crea un archivo php llamado index.php, luego accede a la siguiente URL a través del navegador "http://jsonplaceholder.typicode.com/users", y copie el resultado que le devuelve la dicha URL, guardalo en una variable en formato en string en una variable llamada "json" dentro del archivo php, conviertalo en un array asociativo y muestre todos esos datos en una tabla.
+
+4.- Crear un nuevo archivo php, donde se hará un formulario para solicitar al usuario los datos de un alumno. Los datos del alumno son: nombre, apellido, cédula y un checkbox para saber si esta activo o no el alumno. La pagina que procesa el formulario debe tomar los datos enviados y construir un objeto JSON que luego debe ser mostrado en pantalla (usar var_dump o printr)
+
+5.- En el mismo formulario, agregar inputs adicionales para solicitar al usuario: nombre_asignatura, sección y 3 inputs para solicitar las notas que el alumno obtuvo en la asignatura (colocar a los inputs el mismo nombre para manejarlos como un arreglo). Al procesar el formulario, los datos de la asignatura deben armarse en un objeto JSON, colocando las notas como un atributo adicional del objeto, pero como un arreglo de valores. Este nuevo objeto debe agregarse al objeto JSON creado en el objetivo anterior de forma que quede así: { cedula: 111111, nombre: jose, apellido: rojas, asignatura:{ nombre : php secion: 1452, notas: [52,20,45] }, }
