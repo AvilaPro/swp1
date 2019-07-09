@@ -10,3 +10,13 @@ controller -> controlador dedicado
 
 modelo -> el controlador dedicado le pide al modelo
 
+clase 3
+
+http://omdbapi.com/  -> una api de ejemplo (ya tengo una apikey: Here is your key: 92c1362b
+
+Please append it to all of your API requests,
+
+OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=92c1362b)
+
+
+
