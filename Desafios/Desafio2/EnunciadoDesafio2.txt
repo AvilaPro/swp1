@@ -1,0 +1,12 @@
+Enunciado de la tarea 2 de la sección 2949
+Recuerde enviar los capture pertinentes a los objectivos necesarios.
+
+1.- 1 - visite la siguiente url: "https://swapi.co/" y lea la documentacion del API para conocer cómo usarla. Usando Postman conecte al API y haga las peticiones necesarias con el método GET para obtener: - los datos de 2 Planetas diferentes - los datos de 4 Personajes diferentes Haga una petición de Postman para cada categoría. Recuerde enviar captura donde se observe la URL y que recibio la respuesta del API.
+
+2.- Continuando con el objectivo anterior, solicitar tambien, por Postman: - todos los Vehiculos registrados. De igual manera, hacer captura y enviar captura donde se observe la URL y que recibio la respuesta del API.
+
+3.- Crear un nuevo proyecto PHP. Crear en la raiz del proyecto un archivo "index.php" y dos carpetas, una llamada "Controllers" y la otra llamada "Models". En la carpeta "Models" crear un archivo PHP llamado "starwars.php". En este archivo definir una clase con un metodo llamado "getPeliculas()" que permita conectarse a la siguiente API: "https://swapi.co/api/films/" a traves de la libreria de cURL. El metodo debe retornar la respuesta que se obtuvo de la peticion a la API trasnformada a Objeto de Php con json_decode().
+
+4.- Crear dentro de la carpeta de "Controllers" un archivo PHP llamado "starwarsController.php", el cual va a tener una funcion llamada "index()" que va a instanciar la clase definida en starwars.php y va a ejecutar el metodo "getPeliculas()" para obtener los datos de API (recordar hacer include o require del modelo).
+
+5.- Una vez los datos sean retornados por la funcion de "getPeliculas()", mostrar dichos datos en una tabla, la cual tiene que ser creada dentro de la funcion "index()" del controlador, con los siguiente parametros: - title - episode_id - opening_crawl - created - director Recordar llamar a la funcion "index()" del controlador desde el archivo "index.php" para que se pueda ejecutar.

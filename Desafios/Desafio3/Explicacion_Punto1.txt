@@ -1,0 +1,15 @@
+
+1. Escogi como api la de marvel cuya informacion se encuentra en el siguiente link:
+
+https://developer.marvel.com/documentation/getting_started
+
+2. Una vez registrado te muestran en pantalla tu public key y tu private key
+
+3. Para poder hacer un GET valido debes crear un ts (timestamp) y un hash MD5.
+
+En mi caso seleccione ts:1
+Y el has se crea a partir de la combinacion de ts+privateKey+publicKey
+
+4. ya con estos datos se tiene una respuesta 200 del servidor.
+
+5. En la imagen Punto1_3  se observan algunos llamados validos en lo que ellos denominaron "public".

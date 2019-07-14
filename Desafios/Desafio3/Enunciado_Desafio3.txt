@@ -1,0 +1,21 @@
+Enunciado de la tarea 3 de la sección 2949
+
+Use lo aprendido en clase. 
+
+Ademas crear una base de datos llamada "services", a la cual le van a importar el archivo .sql que esta como archivo adjunto del desafio.
+
+Agregar registros a las tablas que se encuentran el, tanto a la tabla "api_key", que seran las API Key validas y en la tabla "pasajeros" que seran los recursos disponibles en la API.
+ 
+Agregar como minimo tres (3) API Key y quince (15) Pasajeros.
+
+1.- Investigue en internet acerca de alguna API de su gusto, que utilice una API Key. Mostrar el paso a paso de como solicitar dicha API Key, ademas mostrar a traves de Postman, una peticion al API sin y con la API Key, para obrservar la respuesta.
+
+2.- Crear un nuevo proyecto de PHP, donde se tendra como extrutura, el diseño Front Controller, por ende, crear un archivo "index.php"; y crear dos carpetas, una llamada "Controllers" y la otra llamada "Models", cada una con su respectivo archivo, como se observo en clase. Generar un Modelo dentro de la carpeta "Models" que permita consumir de la bases de datos, teniendo en cuenta la arquitectura Front Controller, que devuelva todos los pasajeros que se encuentran en la base de datos. Crear un controlador dentro de la carpeta "Controlles" que consuma del modelo anterior para mostrar los pajaseros.
+
+3.- Validar dentro del controlador que envien una API Key valida, para poder devolverle al cliente los pasajeros, en caso contrario, devolver un mensaje de error correspondiente si la API Key no es valida o no se esta enviando.
+
+4.- Al controlador anterior sumarle la capacidad de recibir un parametro "ID" para poder obtener un pasajero por su ID, en consecuencia, crear una funcion en el modelo que permita obtener dicho pasajero con su "ID".
+
+5.- Agregarle al controlador de pasajeros la posibilidad de poder filtra la peticion a traves de parametros: el nombre, el apellido y el destino de los recursos de la tabla pasajeros. Crear las respectivas funciones en el modelo para poder obtener dichos recursos.
+
+Descargar Archivo Adjunto
