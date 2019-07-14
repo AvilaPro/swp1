@@ -1,5 +1,5 @@
 <?php
-    include_once('Modelo/facturamodelo.php');
+    include_once('Model/pasajeroModel.php');
     include_once('APIKey.php');
 
     function get(){
@@ -13,17 +13,18 @@
                     $response = getID($_GET['id']);
                 }elseif (isset($_GET['name'])) {
                     $response = getNombre($_GET['name']);
+                }elseif (isset($_GET['lastname'])) {
+                    $response = getNombre($_GET['lastname']);
+                }elseif (isset($_GET['destination'])) {
+                    $response = getNombre($_GET['destination']);
                 }else{
-                    $response = getFactura();
+                    $response = getPasajero();
                 } 
                 var_dump($response);
             }else {
                 var_dump('Tu API KEY no es valida');
             }
         }
-
-        /* $response = getFactura();
-        var_dump($response); */
         
     }
 
