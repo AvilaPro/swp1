@@ -8,12 +8,17 @@
 </head>
 <body>
 <h4 style=color:green>Desafio 3 SWP</h4>
+<br>
+<br>
+<a href="doc_api.html"><h5 style=color:blue>Documentacion</h5></a> 
     <?php
         include_once ('controllers/pasajeroController.php');
         
         get();
 
     ?>
+
+
 
 </body>
 </html>

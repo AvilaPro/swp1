@@ -1,9 +1,9 @@
 <?php
-    include_once('Model/pasajeroModel.php');
+    include_once('Models/pasajeroModel.php');
     include_once('APIKey.php');
 
     function get(){
-        //var_dump($_GET);    
+            
         if(!isset($_GET['apikey'])){
             var_dump("no estas enviando el API Key");
             exit();
