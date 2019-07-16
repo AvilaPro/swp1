@@ -60,6 +60,7 @@
 
     }
 
+    //revisar esto en casa OJO!
     function delete(){
         //var_dump($_GET);
         if (!isset($_GET['id']) || empty($_GET['id'])) {

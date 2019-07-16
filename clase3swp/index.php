@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<h4 style=color:green>Clase 2 SWP</h4>
+<h4 style=color:green>Clase 4 SWP</h4>
     <?php
 
         //clase 3
