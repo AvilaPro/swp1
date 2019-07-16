@@ -18,5 +18,33 @@ Please append it to all of your API requests,
 
 OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=92c1362b)
 
+clase 4
+
+En esta clase creamos el metodo post
+
+1. En el index.php agregamos lo siguiente:
+ switch (strtolower($_SERVER["REQUEST_METHOD"])) {
+            case 'post':
+                post();   
+            break;
+            
+            default:
+                get();
+            break;
+ }
+2.en factura controller se configura la recepcion de la variable $_POST se procesa y luego se envia, como por ejemplo en la siguiente instruccion
+function post(){
+        //var_dump($_POST); esto para ver que se estaba enviando en la variable $_POST
+
+        $DATA = $_POST;
+
+        if (isset($DATA['nombre'])) {
+            $DATA['nombre'] = "Tu nombre es: ";
+        }
+
+        var_dump($DATA);
+   }
+3.
+
 
 

@@ -14,6 +14,8 @@
 
         //var_dump($response); */
 
+        //clase 3 a partir de aqui
+
         $dns='mysql:host=localhost;dbname=php_services';
         try{
             $conexion = new PDO($dns, 'root', '');
@@ -63,5 +65,64 @@
             echo "La conexion a la base de datos no fue exitosa ".$th->getMessage();
         }
     }
+
+    function isNameExist($nombre){
+        $dns='mysql:host=localhost;dbname=php_services';
+        try{
+            $conexion = new PDO($dns, 'root', '');
+
+            $result = $conexion
+            ->query("SELECT * FROM factura WHERE nombre_cliente = '$nombre'", PDO::FETCH_ASSOC);
+
+            $response = $result->rowCount() > 0 ? true : false;
+
+            return $response;
+        }catch(\Throwable $th){
+            echo "La conexion a la base de datos no fue exitosa ".$th->getMessage();
+        }
+    }
+
+    function isExistId($ID){
+        $dns='mysql:host=localhost;dbname=php_services';
+        try{
+            $conexion = new PDO($dns, 'root', '');
+
+            $result = $conexion
+            ->query("SELECT * FROM factura WHERE id='$ID'");
+            
+            $response = $result->rowCount() > 0 ? true : false;
+        }catch(\Throwable $th){
+            echo "La conexion a la base de datos no fue exitosa ".$th->getMessage();
+        }
+    }
+
+    function create($nombre, $cedula, $monto){
+        $dns='mysql:host=localhost;dbname=php_services';
+        try{
+            $conexion = new PDO($dns, 'root', '');
+
+            $result = $conexion
+            ->query("INSERT INTO factura (nombre_cliente, cedula_cliente, monto) VALUES ('$nombre', '$cedula', '$monto')");
+            
+            return $result->rowCount() > 0 ? true : false;
+        }catch(\Throwable $th){
+            echo "La conexion a la base de datos no fue exitosa ".$th->getMessage();
+            return null;
+        }
+    }
     
+    function eliminar($ID){
+        $dns='mysql:host=localhost;dbname=php_services';
+        try{
+            $conexion = new PDO($dns, 'root', '');
+
+            $result = $conexion
+            ->query("DELETE FROM factura WHERE id='$ID'");
+            
+            return $result->rowCount() > 0 ? true : false;
+        }catch(\Throwable $th){
+            echo "La conexion a la base de datos no fue exitosa ".$th->getMessage();
+            return null;
+        }
+    }
 ?>

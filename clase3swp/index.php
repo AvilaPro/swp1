@@ -9,9 +9,31 @@
 <body>
 <h4 style=color:green>Clase 2 SWP</h4>
     <?php
+
+        //clase 3
         include_once ('controladores/facturaController.php');
         
-        get();
+        //get(); comentado en clase 4
+
+        //clase4
+
+        switch (strtolower($_SERVER["REQUEST_METHOD"])) {
+            case 'post':
+                post();   
+            break;
+
+            case 'put':
+                put();
+            break;
+
+            case 'delete':
+                delete();
+            break;
+            
+            default:
+                get();
+            break;
+        }
 
     /* $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, "http://192.168.1.201/cadi/index.php/factura");
