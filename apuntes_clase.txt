@@ -44,7 +44,7 @@ function post(){
 
         var_dump($DATA);
    }
-3.
+3. Json Web Token (JWT)
 
 
 
