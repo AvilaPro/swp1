@@ -1,0 +1,14 @@
+Enunciado de la tarea 4 de la sección 2949
+En continuacion con el desafio anterior, realizar los siguientes objetivos:
+
+1.- Crear en el modelo una funcion que permita crear un nuevo pasajero, guardandolo en la base de datos. Crear en el controlador una funcion que se ejecute al momento de enviar una peticion por el metodo POST para crear un pasajero.
+
+2.- Al momento de crear un pasajero, validar cada uno de los campos necesarios para crear un pasajero, lo cuales no esten vacios. Ademas que el nombre del pasajero que se esta creando no se repita con otro que ya este ingresado. Una vez que el pasajero haya sido creado y guardado en la base de datos enviar al cliente en la respuesta, un JWT con: el nombre, destino y fecha de llegada como claims del JWT.
+
+3.- Crear en el modelo una funcion que permita borrar a un pasajero po su ID, de la base de datos. De igual forma, crear una funcion en el controlador que se ejecute al hacer una peticion por el metodo DELETE para poder llamar al modelo de borrar pasajero. Recibir por parametros el ID del pasjero que se desea borrar y validar dicho ID si existe en el sistema, en el caso de que si exista se borra y se devuelve un mensaje de exito al cliente, en caso contrario, devolver un mensaje de error al cliente.
+
+4.- Crear en el modelo una funcion que permita actualizar los datos de un pasajero dependiendo de su ID. De igual manera crear en el controlador una funcion que se ejecute por el PUT que llame al modelo de actualizar un pasajero. Validar tanto el ID que es recibido por parametros, como los datos enviados por json o urlencoded para que no esten vacios y sean correctos. En el caso de que la actualizacion sea exitosa, mostrar al cliente un mesaje de exito, en caso contrario, mostrar lo ocurrido en un mensaje de error.
+
+5.- Hacer que todas las funciones del controlador necesiten de un API KEY para poder acceder a ellas. Hacer que a todas las funciones del controlador excepto la funcion del Metodo POST, necesiten de un JWT para poder acceder a ellas, en caso de que falte uno o ambos token, mostrar un mensaje de error coherente por falta de autorizacion y autenticacion.
+
+Descargar Archivo Adjunto
